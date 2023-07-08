@@ -1,0 +1,35 @@
+{
+  "name": "metamask.synpresstests",
+  "version": "1.0.0",
+  "description": "BUILDer Application Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/stakingToken/Smoke_StakeFlow.spec.js",
+    "test-sendtoken-smoke": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/sendToken/Smoke_*.js",
+    "test-sendtoken-regression": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/sendToken/Regression_*.js",
+    "test-sendtoken": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/sendToken/*.js",
+    "test-swaptoken-smoke": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/swapToken/Smoke_*.js",
+    "test-swaptoken-regression": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/swapToken/Regression_*.js",
+    "test-swaptoken": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/swapToken/*.js",
+    "test-staketoken-smoke": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/stakeToken/Smoke_*.js",
+    "test-staketoken-regression": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/stakeToken/Regression_*.js",
+    "test-staketoken": "synpress run --configFile synpress.config.js --browser chrome --spec cypress/e2e/stakeToken/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TourmalineCore/Metamask.SynpressTests.git"
+  },
+  "author": "Jinesh Darji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TourmalineCore/Metamask.SynpressTests/issues"
+  },
+  "homepage": "https://github.com/TourmalineCore/Metamask.SynpressTests#readme",
+  "devDependencies": {
+    "@synthetixio/synpress": "3.7.1",
+    "chai": "^4.3.7",
+    "cypress": "^12.12.0",
+    "mocha": "^10.2.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
